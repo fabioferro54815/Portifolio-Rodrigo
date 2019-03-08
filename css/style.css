@@ -1,0 +1,318 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Muli-Light', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+header{
+    background-color: #000;
+    position: fixed;
+}
+header > nav > ul{
+    display: flex;
+}
+header > nav > ul > li{
+    flex-direction: row;
+}
+nav{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.3em;
+
+}
+nav > ul{
+    list-style-type: none;
+    height: 2em;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.84em 2em;
+}
+nav a:hover{
+    background: #fff;
+    color: #000;
+    text-shadow: 0 1px 5px #333;
+}
+#skills{
+    background-color: #333333;
+}
+#skills > article{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 105vh;
+}
+.quali{
+    width: 30%;
+    height: 35%;
+}
+.quali h3{
+    text-align: center;
+}
+.quali > li{
+    text-align: left;
+
+}
+#skills > article > div{
+    background-color: #bfbfbf;
+    border: solid 3px #FF7E00;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.quali ul > li{
+    list-style-type: square;
+}
+.quali ul > ul > li{
+    list-style-type: disc;
+}
+select{
+    color: #000;
+}
+option{
+    color: #000;
+}
+h1{
+    font-size: 4em;
+    text-align: center;
+    color: #FF7E00;
+}
+h2{
+    padding: 1em;
+    font-size: 4em;
+    align-self: center;
+    color: #FF7E00;
+}
+h3{
+    font-size: 2em;
+    color: #000;
+    padding-bottom: 30px;
+}
+h4{
+    font-size: 2em;
+    color: #000;
+    padding-bottom: 30px;
+}
+#projetos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #363636;
+    height: 105vh;
+}
+.img_logo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #bfbfbf;
+    border: solid 3px #FF7E00;
+    width: 60%;
+    border-radius: 10px;
+    
+    text-align: center;
+}
+.img_logo > p{
+    font-size: 1.5em;
+    color: #000;
+}
+.img_logo img{
+    width: 100%;
+    max-width: 270px;
+}
+#contato{
+    background-color: #383838;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+}
+#contato > div > p{
+    color: #000;
+    font-size: 4em;
+    padding: 1em;
+}
+#contato  div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #bfbfbf;
+    border: solid 3px #FF7E00;
+    border-radius: 30px;
+    
+}
+
+li{
+    color: #000;
+}
+footer{
+    background-color: #212121;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer img{
+    width: 100%;
+    max-width: 50px;
+}
+footer div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+#banner{
+    height: 110vh;
+    background-color: #7F7F7F;
+}
+#banner div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#banner > div img{
+    padding-bottom: 5px;
+    padding-top: 100px;
+    width: 100%;
+    max-width: 500px;
+}
+#sobre{
+    height: 90vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#sobre article{
+    
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #bfbfbf;
+    border: solid 3px #FF7E00;
+    border-radius: 20px;
+}
+#sobre > article > img{
+    width: 100%;
+    max-width: 600px;
+    border: solid 3px #FF7E00;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.linha{
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+#btn_menu{
+    display: none;
+}
+
+@media screen and (max-width: 1400px){
+    nav{
+        margin-top: 15px;
+       font-size: 1em; 
+    }
+    nav a{
+        padding: 0.9em 2.5em;
+    }
+}
+@media screen and (max-width: 1260px){
+    .quali > h3{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1125px){
+    .quali > ul > ul li{
+        font-size: 0.8em;
+        
+    }
+    .quali > h3{
+        font-size: 1.2em;
+    }
+
+}
+@media screen and (max-width: 480px){
+    #skills > article > div{
+        width: 100%;
+    }
+    .quali > ul > ul li{
+        font-size: 1em;
+    }
+    .quali > h3{
+        font-size: 1.5em;
+    }
+    .img_logo{
+        width: 90%;
+    }
+    #sobre article{
+        width: 90%;
+    }
+    #contato > div > p{
+        font-size: 1.5em;
+    }
+    footer img{
+        max-width: 30px;
+    }
+    #btn_menu{
+        display: block;        
+        
+        
+    }
+    header > nav > ul {
+        flex-direction: column;
+        background: #000;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transition: linear 2s;
+        z-index: 3;
+        background-color: #000;
+        height: 260px;
+    }
+    header nav ul{
+        display: block;
+    }
+    nav ul a{
+        display: block;
+    }
+    .active{
+        display: block;
+    }
+    header{
+        background-color: #000;
+    }
+    .menu > ul li{
+        background-color: #000;
+        width: 100%;
+        
+    }
+    nav ul{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+    }
+}
